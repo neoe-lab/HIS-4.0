@@ -1,4 +1,5 @@
 <section>
+    {{-- start จำนวนผู้รับบริการ --}}
     <div class="card">
         <div class="card-header">
             <h3><i class="fa fa-table"></i> จำนวนผู้รับบริการ</h3>
@@ -56,7 +57,10 @@
 
         </div>
     </div>
-    <div class="card">
+    {{-- end จำนวนผู้รับบริการ --}}
+
+    {{-- start จำนวนผู้รับบริการรายแผนก (มาตรฐาน สปสช.) --}}
+    {{-- <div class="card">
         <div class="card-header">
             <h3><i class="fa fa-table"></i> จำนวนผู้รับบริการรายแผนก (มาตรฐาน สปสช.)</h3>
 
@@ -214,8 +218,10 @@
             </div>
 
         </div>
-    </div>
-    <div class="card">
+    </div> --}}
+    {{-- end จำนวนผู้รับบริการรายแผนก (มาตรฐาน สปสช.) --}}
+    {{-- start  จำนวนผู้รับบริการรายแผนก (HOSxP) --}}
+    {{-- <div class="card">
         <div class="card-header">
             <h3><i class="fa fa-table"></i> จำนวนผู้รับบริการรายแผนก (HOSxP)</h3>
 
@@ -500,8 +506,10 @@
             </div>
 
         </div>
-    </div>
-    <div class="card">
+    </div> --}}
+    {{-- end จำนวนผู้รับบริการรายแผนก (HOSxP) --}}
+    {{-- start 10 อันดัยโรค --}}
+    {{-- <div class="card">
         <div class="card-header">
             <h3><i class="fa fa-sort-amount-desc"></i> 50 อันดับโรคผู้ป่วยนอก</h3>
 
@@ -925,5 +933,6 @@
                 </table>
             </div>
         </div>
-    </div>
+    </div> --}}
+    {{-- end 10 อันดัยโรค --}}
 </section>

@@ -19,6 +19,8 @@
   <script src={{ asset('assets/js/moment.min.js') }}></script>
   <script src={{ asset('assets/js/bootstrap-datetimepicker.min.js') }}></script>
 
+  @yield('script-datepicker')
+
   <!-- Chart JS -->
   <script src={{ asset('assets/plugins/morris/morris.min.js') }}></script>
   <script src={{ asset('assets/plugins/raphael/raphael.min.js') }}></script>

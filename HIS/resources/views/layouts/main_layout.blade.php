@@ -28,6 +28,7 @@
             <!-- Page Content -->
             <div class="content container-fluid">
                 @yield('page-header')
+                @yield('page-filter')
                 @yield('page-content')
             </div>
             <!-- /Page Content -->

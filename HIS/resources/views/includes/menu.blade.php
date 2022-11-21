@@ -6,41 +6,41 @@
                 <li class="menu-title">
                     <span>เมนูหลัก</span>
                 </li>
-                <li class="active">
+                <li class="{{ Request::path() == '/' ? 'active' : ''}}">
                     <a href="{{ route('home-page') }}"><i class="la la-home"></i><span>HOME</span></a>
                 </li>
                 <li class="submenu">
                     <a href="#"><i class="la la-area-chart"></i> <span>ข้อมูลและสถิติ</span><span class="menu-arrow"></span></a>
                     <ul style="display: none;">
                         <li>
-                            <a href="{{ route('opd-page') }}">ผู้รับบริการ</a>
+                            <a class="{{ Request::path() == 'opd' ? 'active' : ''}}" href="{{ route('opd-page') }}">ผู้รับบริการ</a>
                         </li>
                         <li>
-                            <a href="./ipd.html">ผู้ป่วยใน</a>
+                            <a class="{{ Request::path() == 'ipd' ? 'active' : ''}}" href="{{ route('ipd-page') }}">ผู้ป่วยใน</a>
                         </li>
                         <li>
-                            <a href="./dent.html">ทัยตกรรม</a>
+                            <a class="{{ Request::path() == 'dent' ? 'active' : ''}}" href="{{ route('dent-page') }}">ทัยตกรรม</a>
                         </li>
                         <li>
-                            <a href="./ppt.html">แพทย์แผนไทย</a>
+                            <a class="{{ Request::path() == 'ppt' ? 'active' : ''}}" href="{{ route('ppt-page') }}">แพทย์แผนไทย</a>
                         </li>
                         <li>
-                            <a href="./er.html">อุบัติเหตุและฉุกเฉิน</a>
+                            <a class="{{ Request::path() == 'er' ? 'active' : ''}}" href="{{ route('er-page') }}">อุบัติเหตุและฉุกเฉิน</a>
                         </li>
                         <li>
-                            <a href="./cd.html">โรคติดต่อ CD</a>
+                            <a class="{{ Request::path() == 'cd' ? 'active' : ''}}" href="{{ route('cd-page') }}">โรคติดต่อ CD</a>
                         </li>
                         <li>
-                            <a href="./ncd.html">โรคไม่ติดต่อ NCD</a>
+                            <a class="{{ Request::path() == 'ncd' ? 'active' : ''}}" href="{{ route('ncd-page') }}">โรคไม่ติดต่อ NCD</a>
                         </li>
                         <li>
-                            <a href="./pts.html">กายภาพบำบัด</a>
+                            <a class="{{ Request::path() == 'pts' ? 'active' : ''}}" href="{{ route('pts-page') }}">กายภาพบำบัด</a>
                         </li>
                         <li>
-                            <a href="./xray.html">รังสิวินิจฉัย X-ray</a>
+                            <a class="{{ Request::path() == 'xray' ? 'active' : ''}}" href="{{ route('xray-page') }}">รังสิวินิจฉัย X-ray</a>
                         </li>
                         <li>
-                            <a href="./lab.html">ชันสูตรสาธารณสุข</a>
+                            <a class="{{ Request::path() == 'lab' ? 'active' : ''}}" href="{{ route('lab-page') }}">ชันสูตรสาธารณสุข</a>
                         </li>
 
 

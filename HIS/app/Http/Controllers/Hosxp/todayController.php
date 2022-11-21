@@ -8,8 +8,9 @@ use Illuminate\Support\Facades\DB;
 
 class todayController extends Controller
 {
-    public function index()
-    {
+    public function index(Request $req)
+    {   
+        // dd($req->all());
         //################  connection database hosxp #################
         $hosxp_db = DB::connection('hosxp');
         $hosxp_pcu_db = DB::connection('hosxp_pcu');
